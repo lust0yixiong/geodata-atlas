@@ -1,0 +1,188 @@
+{
+  "name": "open-data-atlas",
+  "title": "开放数据图谱 / Open Data Atlas",
+  "description": "2121 datasets across multiple categories, with URL verification, license validation, dedup, citation network, and size info.",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "resources": [
+    {
+      "name": "catalog",
+      "path": "master.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "category",
+            "type": "string",
+            "description": "顶层领域 (Vector · Geospatial / Raster · Imagery / Statistical · Economic ...)"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "数据集名称"
+          },
+          {
+            "name": "provider",
+            "type": "string",
+            "description": "发布方/作者机构"
+          },
+          {
+            "name": "theme_canonical",
+            "type": "string",
+            "description": "规范化子类主题"
+          },
+          {
+            "name": "theme_raw",
+            "type": "string",
+            "description": "theme_raw"
+          },
+          {
+            "name": "coverage",
+            "type": "string",
+            "description": "coverage"
+          },
+          {
+            "name": "license",
+            "type": "string",
+            "description": "抓取时许可证"
+          },
+          {
+            "name": "license_now",
+            "type": "string",
+            "description": "核实时披露的当前许可证"
+          },
+          {
+            "name": "formats",
+            "type": "string",
+            "description": "数据格式"
+          },
+          {
+            "name": "formats_now",
+            "type": "string",
+            "description": "formats_now"
+          },
+          {
+            "name": "access",
+            "type": "string",
+            "description": "访问方式"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "主入口 URL"
+          },
+          {
+            "name": "new_url",
+            "type": "string",
+            "description": "重定向后的新 URL"
+          },
+          {
+            "name": "verified_alive",
+            "type": "string",
+            "description": "URL 状态 yes/no/redirect/blocked/timeout/unknown"
+          },
+          {
+            "name": "verified_pre_lychee",
+            "type": "string",
+            "description": "verified_pre_lychee"
+          },
+          {
+            "name": "lychee_status",
+            "type": "string",
+            "description": "lychee CLI ground-truth 状态"
+          },
+          {
+            "name": "lychee_text",
+            "type": "string",
+            "description": "lychee_text"
+          },
+          {
+            "name": "doi_or_citation",
+            "type": "string",
+            "description": "DOI 或引用"
+          },
+          {
+            "name": "relation",
+            "type": "string",
+            "description": "引用关系 derived-from/extends/subsets/fuses-with/uses"
+          },
+          {
+            "name": "parent_flagship",
+            "type": "string",
+            "description": "若是下游派生, 指向旗舰"
+          },
+          {
+            "name": "what_changes",
+            "type": "string",
+            "description": "what_changes"
+          },
+          {
+            "name": "file_size",
+            "type": "string",
+            "description": "文件大小"
+          },
+          {
+            "name": "feature_count",
+            "type": "string",
+            "description": "要素/记录数"
+          },
+          {
+            "name": "scale",
+            "type": "string",
+            "description": "比例尺或分辨率"
+          },
+          {
+            "name": "time_span",
+            "type": "string",
+            "description": "time_span"
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "notes"
+          },
+          {
+            "name": "dup_count",
+            "type": "integer",
+            "description": "被独立发现的次数 (重要性代理)"
+          },
+          {
+            "name": "splink_merged_from",
+            "type": "string",
+            "description": "合并的别名/镜像"
+          },
+          {
+            "name": "seen_in_passes",
+            "type": "string",
+            "description": "seen_in_passes"
+          },
+          {
+            "name": "host",
+            "type": "string",
+            "description": "域名"
+          },
+          {
+            "name": "verify_notes",
+            "type": "string",
+            "description": "verify_notes"
+          },
+          {
+            "name": "desc_zh",
+            "type": "string",
+            "description": "中文详细介绍"
+          },
+          {
+            "name": "desc_en",
+            "type": "string",
+            "description": "English description"
+          }
+        ]
+      }
+    }
+  ]
+}

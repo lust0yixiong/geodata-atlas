@@ -1,0 +1,548 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "sc": "https://schema.org/",
+    "dct": "http://purl.org/dc/terms/",
+    "conformsTo": "dct:conformsTo",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "extract": "cr:extract",
+    "column": "cr:column",
+    "recordSet": "cr:recordSet",
+    "source": "cr:source"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "open-data-atlas",
+  "description": "2121 datasets across multiple categories, with URL verification, license validation, dedup, citation network, and size info.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "Vector · Geospatial",
+    "open data",
+    "catalog"
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "catalog-csv",
+      "name": "master.csv",
+      "contentUrl": "master.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "83471ef54f88478c742ae4f7e1217ef119e8c3c7d9931de5b3632e34bf2190c7"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "catalog",
+      "name": "catalog",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/category",
+          "name": "category",
+          "description": "顶层领域 (Vector · Geospatial / Raster · Imagery / Statistical · Economic ...)",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/name",
+          "name": "name",
+          "description": "数据集名称",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/provider",
+          "name": "provider",
+          "description": "发布方/作者机构",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "provider"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/theme_canonical",
+          "name": "theme_canonical",
+          "description": "规范化子类主题",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "theme_canonical"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/theme_raw",
+          "name": "theme_raw",
+          "description": "theme_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "theme_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/coverage",
+          "name": "coverage",
+          "description": "coverage",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "coverage"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/license",
+          "name": "license",
+          "description": "抓取时许可证",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "license"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/license_now",
+          "name": "license_now",
+          "description": "核实时披露的当前许可证",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "license_now"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/formats",
+          "name": "formats",
+          "description": "数据格式",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "formats"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/formats_now",
+          "name": "formats_now",
+          "description": "formats_now",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "formats_now"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/access",
+          "name": "access",
+          "description": "访问方式",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "access"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/url",
+          "name": "url",
+          "description": "主入口 URL",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/new_url",
+          "name": "new_url",
+          "description": "重定向后的新 URL",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "new_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/verified_alive",
+          "name": "verified_alive",
+          "description": "URL 状态 yes/no/redirect/blocked/timeout/unknown",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "verified_alive"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/verified_pre_lychee",
+          "name": "verified_pre_lychee",
+          "description": "verified_pre_lychee",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "verified_pre_lychee"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/lychee_status",
+          "name": "lychee_status",
+          "description": "lychee CLI ground-truth 状态",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "lychee_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/lychee_text",
+          "name": "lychee_text",
+          "description": "lychee_text",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "lychee_text"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/doi_or_citation",
+          "name": "doi_or_citation",
+          "description": "DOI 或引用",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "doi_or_citation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/relation",
+          "name": "relation",
+          "description": "引用关系 derived-from/extends/subsets/fuses-with/uses",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "relation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/parent_flagship",
+          "name": "parent_flagship",
+          "description": "若是下游派生, 指向旗舰",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "parent_flagship"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/what_changes",
+          "name": "what_changes",
+          "description": "what_changes",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "what_changes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/file_size",
+          "name": "file_size",
+          "description": "文件大小",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "file_size"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/feature_count",
+          "name": "feature_count",
+          "description": "要素/记录数",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "feature_count"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/scale",
+          "name": "scale",
+          "description": "比例尺或分辨率",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "scale"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/time_span",
+          "name": "time_span",
+          "description": "time_span",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "time_span"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/notes",
+          "name": "notes",
+          "description": "notes",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/dup_count",
+          "name": "dup_count",
+          "description": "被独立发现的次数 (重要性代理)",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "dup_count"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/splink_merged_from",
+          "name": "splink_merged_from",
+          "description": "合并的别名/镜像",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "splink_merged_from"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/seen_in_passes",
+          "name": "seen_in_passes",
+          "description": "seen_in_passes",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "seen_in_passes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/host",
+          "name": "host",
+          "description": "域名",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "host"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/verify_notes",
+          "name": "verify_notes",
+          "description": "verify_notes",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "verify_notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/desc_zh",
+          "name": "desc_zh",
+          "description": "中文详细介绍",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "desc_zh"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "catalog/desc_en",
+          "name": "desc_en",
+          "description": "English description",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "catalog-csv"
+            },
+            "extract": {
+              "column": "desc_en"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
