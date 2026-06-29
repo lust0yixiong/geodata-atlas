@@ -1,10 +1,10 @@
 # 🌍 开放数据图谱 · Open Data Atlas
 
-**5,724 个**经过核实的开源数据集，跨 **5 大类别**，每条含**中英双语介绍** + URL 核实状态 + 许可证 + 去重 + 尺寸信息。
+**5,770 个**经过核实的开源数据集，跨 **5 大类别**，每条含**中英双语介绍** + URL 核实状态 + 许可证 + 去重 + 尺寸信息。
 
 🔗 **在线**: https://lust0yixiong.github.io/geodata-atlas/
 
-[![data-license](https://img.shields.io/badge/data-CC--BY--4.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![datasets](https://img.shields.io/badge/datasets-5,724-22c55e)](https://lust0yixiong.github.io/geodata-atlas/) [![categories](https://img.shields.io/badge/categories-5-0891b2)](https://lust0yixiong.github.io/geodata-atlas/) [![bilingual](https://img.shields.io/badge/descriptions-zh%2Fen%20100%25-blue)](https://lust0yixiong.github.io/geodata-atlas/)
+[![data-license](https://img.shields.io/badge/data-CC--BY--4.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![datasets](https://img.shields.io/badge/datasets-5,770-22c55e)](https://lust0yixiong.github.io/geodata-atlas/) [![categories](https://img.shields.io/badge/categories-5-0891b2)](https://lust0yixiong.github.io/geodata-atlas/) [![bilingual](https://img.shields.io/badge/descriptions-zh%2Fen%20100%25-blue)](https://lust0yixiong.github.io/geodata-atlas/)
 
 ## 五大类别
 
@@ -14,7 +14,7 @@
 | **Raster · Hyperspectral Imagery** 高光谱影像 | 1,137 | AVIRIS/EMIT/EnMAP 机载星载成像光谱、矿物/植被/水色光谱库 |
 | **Infrared · Remote Sensing** 红外遥感 | 1,024 | Landsat/MODIS 地表温度与发射率、热红外产品 |
 | **Radar · SAR** 合成孔径雷达 | 876 | Sentinel-1、星载/机载 SAR 及云平台档案 |
-| **Geophysics · Geomagnetism** 地磁地球物理 | 566 | INTERMAGNET 台站、WMM/IGRF 地磁场模型、地磁观测 |
+| **Geophysics · Geomagnetism** 地磁地球物理 | 612 | INTERMAGNET 台站、WMM/IGRF 地磁场模型、地磁观测 |
 
 > 在线 dashboard 左侧"类别"筛选可单独查看任一类别，每条数据集均有中英双语介绍、核实状态色块、来源证据。
 
@@ -36,9 +36,9 @@
 ## 速览
 
 ```
-5,724 datasets · 5 categories · 中英双语 100%
+5,770 datasets · 5 categories · 中英双语 100%
    ↓
-Vector 2,121 + Hyperspectral 1,137 + Infrared 1,024 + SAR 876 + Geomagnetism 566
+Vector 2,121 + Hyperspectral 1,137 + Infrared 1,024 + SAR 876 + Geomagnetism 612
    ↓
 URL 核实 (lychee) · 多源去重 · 来源证据留痕
 ```
@@ -67,4 +67,4 @@ print(vec[['name','desc_zh','license','url']].head())
 数据 CC BY 4.0 · 网站代码 MIT · catalog 内各数据集各有独立许可证（见各条 `url`）
 
 ---
-*Open Data Atlas · 单文件 dashboard · 5 类别 · 中英双语 · 5,724 datasets*
+*Open Data Atlas · 单文件 dashboard · 5 类别 · 中英双语 · 5,770 datasets*
