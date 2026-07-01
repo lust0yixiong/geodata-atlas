@@ -1,10 +1,10 @@
 # 🌍 开放数据图谱 · Open Data Atlas
 
-**6,932 个**经过核实的开源数据集，跨 **9 大类别**，每条含**中英双语介绍** + URL 核实状态 + 许可证 + 去重 + 尺寸信息。
+**7,005 个**经过核实的开源数据集，跨 **9 大类别**，每条含**中英双语介绍** + URL 核实状态 + 许可证 + 去重 + 尺寸信息。
 
 🔗 **在线**: https://lust0yixiong.github.io/geodata-atlas/
 
-[![data-license](https://img.shields.io/badge/data-CC--BY--4.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![datasets](https://img.shields.io/badge/datasets-6,932-22c55e)](https://lust0yixiong.github.io/geodata-atlas/) [![categories](https://img.shields.io/badge/categories-9-0891b2)](https://lust0yixiong.github.io/geodata-atlas/) [![bilingual](https://img.shields.io/badge/descriptions-zh%2Fen%20100%25-blue)](https://lust0yixiong.github.io/geodata-atlas/)
+[![data-license](https://img.shields.io/badge/data-CC--BY--4.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![datasets](https://img.shields.io/badge/datasets-7,005-22c55e)](https://lust0yixiong.github.io/geodata-atlas/) [![categories](https://img.shields.io/badge/categories-9-0891b2)](https://lust0yixiong.github.io/geodata-atlas/) [![bilingual](https://img.shields.io/badge/descriptions-zh%2Fen%20100%25-blue)](https://lust0yixiong.github.io/geodata-atlas/)
 
 ## 九大类别
 
@@ -17,8 +17,8 @@
 | **Geophysics · Geomagnetism** 地磁地球物理 | 612 | INTERMAGNET 台站、WMM/IGRF 地磁场模型、地磁观测 |
 | **Geophysics · Gravity** 重力地球物理 | 389 | ICGEM 全球重力场模型、EGM2008、时变重力 |
 | **Optical · Multispectral Remote Sensing** 多光谱遥感 | 374 | Sentinel-2 MSI、Landsat C2、多光谱地表反射率 |
-| **Elevation · DEM** 数字高程模型 | 179 | SRTM/ASTER/COP-DEM 等全球数字高程 |
-| **LiDAR · Point Clouds and Elevation** 激光雷达点云 | 220 | OpenTopography、USGS 3DEP 点云与高分辨率地形 |
+| **Elevation · DEM** 数字高程模型 | 210 | SRTM/ASTER/COP-DEM 等全球数字高程 |
+| **LiDAR · Point Clouds and Elevation** 激光雷达点云 | 262 | OpenTopography、USGS 3DEP 点云与高分辨率地形 |
 
 > 在线 dashboard 左侧"类别"筛选可单独查看任一类别，每条数据集均有中英双语介绍、核实状态色块、来源证据。
 
@@ -44,9 +44,9 @@
 ## 速览
 
 ```
-6,932 datasets · 5 categories · 中英双语 100%
+7,005 datasets · 5 categories · 中英双语 100%
    ↓
-Vector 2,121 + Hyperspectral 1,137 + Infrared 1,024 + SAR 876 + Geomagnetism 612 + Gravity 389 + Multispectral 374 + DEM 179 + LiDAR 220
+Vector 2,121 + Hyperspectral 1,137 + Infrared 1,024 + SAR 876 + Geomagnetism 612 + Gravity 389 + Multispectral 374 + DEM 210 + LiDAR 262
    ↓
 URL 核实 (lychee) · 多源去重 · 来源证据留痕
 ```
@@ -75,4 +75,4 @@ print(vec[['name','desc_zh','license','url']].head())
 数据 CC BY 4.0 · 网站代码 MIT · catalog 内各数据集各有独立许可证（见各条 `url`）
 
 ---
-*Open Data Atlas · 单文件 dashboard · 5 类别 · 中英双语 · 6,932 datasets*
+*Open Data Atlas · 单文件 dashboard · 5 类别 · 中英双语 · 7,005 datasets*
