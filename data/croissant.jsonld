@@ -23,7 +23,7 @@
   "@type": "sc:Dataset",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "name": "open-data-atlas",
-  "description": "2121 datasets across multiple categories, with URL verification, license validation, dedup, citation network, and size info.",
+  "description": "2116 datasets across multiple categories, with URL verification, license validation, dedup, citation network, and size info.",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": [
@@ -38,7 +38,7 @@
       "name": "master.csv",
       "contentUrl": "master.csv",
       "encodingFormat": "text/csv",
-      "sha256": "83471ef54f88478c742ae4f7e1217ef119e8c3c7d9931de5b3632e34bf2190c7"
+      "sha256": "d5c7af62da08a795e415ab9d6968166060dbfcf03eb2f4020a23012d2c153cdd"
     }
   ],
   "recordSet": [

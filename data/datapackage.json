@@ -1,7 +1,7 @@
 {
   "name": "open-data-atlas",
   "title": "开放数据图谱 / Open Data Atlas",
-  "description": "2121 datasets across multiple categories, with URL verification, license validation, dedup, citation network, and size info.",
+  "description": "2116 datasets across multiple categories, with URL verification, license validation, dedup, citation network, and size info.",
   "licenses": [
     {
       "name": "CC-BY-4.0",
